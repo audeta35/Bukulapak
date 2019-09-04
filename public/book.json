@@ -1,0 +1,675 @@
+// 20190904202852
+// https://www.gramedia.com/api/products/
+
+[
+  {
+    "name": "Faber Castell Kids Ergonomic Scissors Plastik",
+    "authors": [
+      {
+        "title": "Unknown Author",
+        "href": "https://www.gramedia.com/api/authors/author-unknown-author/"
+      }
+    ],
+    "categories": [
+      {
+        "title": "Pemotong Kertas",
+        "href": "https://www.gramedia.com/api/categories/stationery-sekolah-kantor/pemotong-kertas/"
+      },
+      {
+        "title": "Gunting",
+        "href": "https://www.gramedia.com/api/categories/stationery-sekolah-kantor/pemotong-kertas/gunting/"
+      },
+      {
+        "title": "Stationery, Sekolah & Kantor",
+        "href": "https://www.gramedia.com/api/categories/stationery-sekolah-kantor/"
+      }
+    ],
+    "formats": [
+      {
+        "name": "Faber Castell Kids Ergonomic Scissors Plastik",
+        "title": "Non",
+        "href": "https://www.gramedia.com/api/products/faber-castell-kids-ergonomic-scissors-plastik/65600/",
+        "type": "non-book",
+        "rel": "non-book",
+        "basePrice": 17000.0,
+        "promoPrice": 17000.0,
+        "promoPercentage": 0.0,
+        "promoId": null,
+        "publishDate": "2119-02-28T17:00:00+00:00",
+        "preOrderStart": null,
+        "preOrderEnd": null,
+        "salesStart": null,
+        "salesEnd": null,
+        "weight": "0.02",
+        "isAllowInsurance": false,
+        "isExtraPacking": false,
+        "shipping": {
+          "width": "0",
+          "height": "0",
+          "length": "0",
+          "weight": "0"
+        },
+        "version": "non-book",
+        "sku": "206845847",
+        "stockLevel": 67,
+        "images": [
+          "https://cdn.gramedia.com/uploads/images/206845847_.jpg"
+        ],
+        "variant": {
+
+        }
+      }
+    ],
+    "thumbnail": "https://cdn.gramedia.com/uploads/items/206845847_.jpg",
+    "href": "https://www.gramedia.com/api/products/faber-castell-kids-ergonomic-scissors-plastik/",
+    "isBestseller": null,
+    "isPromo": false,
+    "isNew": false,
+    "tags": [
+
+    ]
+  },
+  {
+    "name": "Deli School Super Clear Liquid Glue(Asst.)(Pcs)",
+    "authors": [
+
+    ],
+    "categories": [
+      {
+        "title": "Adhesive & Tape",
+        "href": "https://www.gramedia.com/api/categories/stationery-sekolah-kantor/adhesive-tape/"
+      },
+      {
+        "title": "Lem",
+        "href": "https://www.gramedia.com/api/categories/stationery-sekolah-kantor/adhesive-tape/lem/"
+      },
+      {
+        "title": "Lem Stik",
+        "href": "https://www.gramedia.com/api/categories/stationery-sekolah-kantor/adhesive-tape/lem/lem-stik/"
+      },
+      {
+        "title": "Stationery, Sekolah & Kantor",
+        "href": "https://www.gramedia.com/api/categories/stationery-sekolah-kantor/"
+      }
+    ],
+    "formats": [
+      {
+        "name": "Deli School Super Clear Liquid Glue(Asst.)(Pcs)",
+        "title": "Non",
+        "href": "https://www.gramedia.com/api/products/deli-school-super-clear-liquid-glueasstpcs/253749/",
+        "type": "non-book",
+        "rel": "non-book",
+        "basePrice": 14500.0,
+        "promoPrice": 14500.0,
+        "promoPercentage": 0.0,
+        "promoId": null,
+        "publishDate": "2119-01-31T17:00:00+00:00",
+        "preOrderStart": null,
+        "preOrderEnd": null,
+        "salesStart": "1899-12-31T16:53:00+00:00",
+        "salesEnd": null,
+        "weight": "0.66",
+        "isAllowInsurance": false,
+        "isExtraPacking": false,
+        "shipping": {
+          "width": "6",
+          "height": "0",
+          "length": "11.5",
+          "weight": "0.66"
+        },
+        "version": "non-book",
+        "sku": "207969736",
+        "stockLevel": 47,
+        "images": [
+          "https://cdn.gramedia.com/uploads/images/207969736_Deli-School-Super-Clear-Liquid-GlueAsst.Pcs.jpg"
+        ],
+        "variant": {
+
+        }
+      }
+    ],
+    "thumbnail": "https://cdn.gramedia.com/uploads/items/207969736_Deli-School-Super-Clear-Liquid-GlueAsst.Pcs.jpg",
+    "href": "https://www.gramedia.com/api/products/deli-school-super-clear-liquid-glueasstpcs/",
+    "isBestseller": null,
+    "isPromo": false,
+    "isNew": false,
+    "tags": [
+
+    ]
+  },
+  {
+    "name": "Allah Maha Besar",
+    "authors": [
+      {
+        "title": "Kiki Dan Tim Redaksi",
+        "href": "https://www.gramedia.com/api/authors/author-kiki-dan-tim-redaksi/"
+      }
+    ],
+    "categories": [
+      {
+        "title": "Buku",
+        "href": "https://www.gramedia.com/api/categories/buku/"
+      },
+      {
+        "title": "Anak-anak",
+        "href": "https://www.gramedia.com/api/categories/buku/buku-anak/anak-anak/"
+      }
+    ],
+    "formats": [
+      {
+        "name": "Allah Maha Besar",
+        "title": "Soft Cover",
+        "href": "https://www.gramedia.com/api/products/allah-maha-besar/363693/",
+        "type": "book",
+        "rel": "soft-cover",
+        "basePrice": 90000.0,
+        "promoPrice": 90000.0,
+        "promoPercentage": 0.0,
+        "promoId": null,
+        "publishDate": "2031-07-19T17:00:00+00:00",
+        "preOrderStart": null,
+        "preOrderEnd": null,
+        "salesStart": null,
+        "salesEnd": null,
+        "weight": 0.3,
+        "isAllowInsurance": false,
+        "isExtraPacking": false,
+        "shipping": {
+          "width": 0.0,
+          "height": 0.0,
+          "length": 0.0,
+          "weight": 0.0
+        },
+        "version": "soft-cover",
+        "sku": "208032006",
+        "stockLevel": 38,
+        "images": [
+
+        ],
+        "variant": {
+
+        }
+      }
+    ],
+    "thumbnail": "https://cdn.gramedia.com/uploads/items/9786021694725.jpg",
+    "href": "https://www.gramedia.com/api/products/allah-maha-besar/",
+    "isBestseller": null,
+    "isPromo": false,
+    "isNew": false,
+    "tags": [
+
+    ]
+  },
+  {
+    "name": "The Intelligent Investor (Edisi Revisi)",
+    "authors": [
+      {
+        "title": "Benjamin Graham",
+        "href": "https://www.gramedia.com/api/authors/author-benjamin-graham/"
+      }
+    ],
+    "categories": [
+      {
+        "title": "Buku",
+        "href": "https://www.gramedia.com/api/categories/buku/"
+      },
+      {
+        "title": "Bisnis & Ekonomi",
+        "href": "https://www.gramedia.com/api/categories/buku/non-fiksi/bisnis-ekonomi/"
+      },
+      {
+        "title": "Investasi",
+        "href": "https://www.gramedia.com/api/categories/buku/non-fiksi/bisnis-ekonomi/investasi/"
+      }
+    ],
+    "formats": [
+      {
+        "name": "The Intelligent Investor (Edisi Revisi)",
+        "title": "Hard Cover",
+        "href": "https://www.gramedia.com/api/products/the-intelligent-investor-hc-edisi-revisi/363315/",
+        "type": "book",
+        "rel": "hard-cover",
+        "basePrice": 195000.0,
+        "promoPrice": 195000.0,
+        "promoPercentage": 0.0,
+        "promoId": null,
+        "publishDate": "2030-07-19T17:00:00+00:00",
+        "preOrderStart": null,
+        "preOrderEnd": null,
+        "salesStart": null,
+        "salesEnd": null,
+        "weight": "0.95",
+        "isAllowInsurance": false,
+        "isExtraPacking": false,
+        "shipping": {
+
+        },
+        "version": "hard-cover",
+        "sku": "208031559",
+        "stockLevel": 94,
+        "images": [
+
+        ],
+        "variant": {
+
+        }
+      }
+    ],
+    "thumbnail": "https://cdn.gramedia.com/uploads/items/9786025336324_The-Intelligent-Investor.jpg",
+    "href": "https://www.gramedia.com/api/products/the-intelligent-investor-hc-edisi-revisi/",
+    "isBestseller": null,
+    "isPromo": false,
+    "isNew": false,
+    "tags": [
+
+    ]
+  },
+  {
+    "name": "Komik Kelurga Muslim (Perpingkot)",
+    "authors": [
+      {
+        "title": "BOIM LEBON & M. FARIS FATAHILLAH",
+        "href": "https://www.gramedia.com/api/authors/author-boim-lebon-m-faris-fatahillah/"
+      }
+    ],
+    "categories": [
+      {
+        "title": "Buku",
+        "href": "https://www.gramedia.com/api/categories/buku/"
+      },
+      {
+        "title": "Komik",
+        "href": "https://www.gramedia.com/api/categories/buku/komik/"
+      }
+    ],
+    "formats": [
+      {
+        "name": "Komik Kelurga Muslim (Perpingkot)",
+        "title": "Soft Cover",
+        "href": "https://www.gramedia.com/api/products/komik-kelurga-muslim-perpingkot/363692/",
+        "type": "book",
+        "rel": "soft-cover",
+        "basePrice": 75000.0,
+        "promoPrice": 75000.0,
+        "promoPercentage": 0.0,
+        "promoId": null,
+        "publishDate": "2030-07-19T17:00:00+00:00",
+        "preOrderStart": null,
+        "preOrderEnd": null,
+        "salesStart": null,
+        "salesEnd": null,
+        "weight": 0.2,
+        "isAllowInsurance": false,
+        "isExtraPacking": false,
+        "shipping": {
+          "width": 0.0,
+          "height": 0.0,
+          "length": 0.0,
+          "weight": 0.0
+        },
+        "version": "soft-cover",
+        "sku": "208032005",
+        "stockLevel": 42,
+        "images": [
+
+        ],
+        "variant": {
+
+        }
+      }
+    ],
+    "thumbnail": "https://cdn.gramedia.com/uploads/items/9786021695579.jpg",
+    "href": "https://www.gramedia.com/api/products/komik-kelurga-muslim-perpingkot/",
+    "isBestseller": null,
+    "isPromo": false,
+    "isNew": false,
+    "tags": [
+
+    ]
+  },
+  {
+    "name": "Ikigai: The Japanese Secret To a Long And Happy Life",
+    "authors": [
+      {
+        "title": "Hector Garcia",
+        "href": "https://www.gramedia.com/api/authors/author-hector-garcia-dan-francesc-miralles/"
+      }
+    ],
+    "categories": [
+      {
+        "title": "Buku",
+        "href": "https://www.gramedia.com/api/categories/buku/"
+      },
+      {
+        "title": "Pengembangan Diri",
+        "href": "https://www.gramedia.com/api/categories/buku/non-fiksi/pengembangan-diri/"
+      }
+    ],
+    "formats": [
+      {
+        "name": "Ikigai: The Japanese Secret To a Long And Happy Life",
+        "title": "Hard Cover",
+        "href": "https://www.gramedia.com/api/products/ikigai-the-japanese-secret-to-a-long-and-happy-life-hc/346815/",
+        "type": "book",
+        "rel": "hard-cover",
+        "basePrice": 348000.0,
+        "promoPrice": 348000.0,
+        "promoPercentage": 0.0,
+        "promoId": null,
+        "publishDate": "2029-08-19T17:00:00+00:00",
+        "preOrderStart": null,
+        "preOrderEnd": null,
+        "salesStart": null,
+        "salesEnd": null,
+        "weight": "0.27",
+        "isAllowInsurance": false,
+        "isExtraPacking": false,
+        "shipping": {
+
+        },
+        "version": "hard-cover",
+        "sku": "208015342",
+        "stockLevel": 0,
+        "images": [
+
+        ],
+        "variant": {
+
+        }
+      }
+    ],
+    "thumbnail": "https://cdn.gramedia.com/uploads/items/9780143130727-edit.jpg",
+    "href": "https://www.gramedia.com/api/products/ikigai-the-japanese-secret-to-a-long-and-happy-life-hc/",
+    "isBestseller": null,
+    "isPromo": false,
+    "isNew": false,
+    "tags": [
+      {
+        "title": "Penguin Us",
+        "href": ""
+      },
+      {
+        "title": "Hector Garcia",
+        "href": ""
+      },
+      {
+        "title": "9780143130727",
+        "href": ""
+      },
+      {
+        "title": "Pengembangan Diri",
+        "href": ""
+      }
+    ]
+  },
+  {
+    "name": "5-Minutes Mickey Mouse Stories",
+    "authors": [
+      {
+        "title": "Disney Book Group",
+        "href": "https://www.gramedia.com/api/authors/author-disney-book-group/"
+      }
+    ],
+    "categories": [
+      {
+        "title": "Buku",
+        "href": "https://www.gramedia.com/api/categories/buku/"
+      },
+      {
+        "title": "Anak-Anak",
+        "href": "https://www.gramedia.com/api/categories/buku/buku-anak/"
+      },
+      {
+        "title": "Pra-Remaja",
+        "href": "https://www.gramedia.com/api/categories/buku/buku-anak/pra-remaja/"
+      }
+    ],
+    "formats": [
+      {
+        "name": "5-Minutes Mickey Mouse Stories",
+        "title": "Hard Cover",
+        "href": "https://www.gramedia.com/api/products/5-minutes-mickey-mouse-stories/346812/",
+        "type": "book",
+        "rel": "hard-cover",
+        "basePrice": 227000.0,
+        "promoPrice": 227000.0,
+        "promoPercentage": 0.0,
+        "promoId": null,
+        "publishDate": "2028-08-19T17:00:00+00:00",
+        "preOrderStart": null,
+        "preOrderEnd": null,
+        "salesStart": null,
+        "salesEnd": null,
+        "weight": "0.86",
+        "isAllowInsurance": false,
+        "isExtraPacking": false,
+        "shipping": {
+
+        },
+        "version": "hard-cover",
+        "sku": "208015338",
+        "stockLevel": 0,
+        "images": [
+
+        ],
+        "variant": {
+
+        }
+      }
+    ],
+    "thumbnail": "https://cdn.gramedia.com/uploads/items/9781368022354-edit.jpg",
+    "href": "https://www.gramedia.com/api/products/5-minutes-mickey-mouse-stories/",
+    "isBestseller": null,
+    "isPromo": false,
+    "isNew": false,
+    "tags": [
+      {
+        "title": "Disney Press",
+        "href": ""
+      },
+      {
+        "title": "Anak-Anak",
+        "href": ""
+      },
+      {
+        "title": "Pra-Remaja",
+        "href": ""
+      },
+      {
+        "title": "Disney Book Group",
+        "href": ""
+      },
+      {
+        "title": "9781368022354",
+        "href": ""
+      }
+    ]
+  },
+  {
+    "name": "Super Diaper Baby #2: Invasion Of The Potty Snatchers",
+    "authors": [
+      {
+        "title": "Dav Pilkey",
+        "href": "https://www.gramedia.com/api/authors/author-dav-pilkey/"
+      }
+    ],
+    "categories": [
+      {
+        "title": "Buku",
+        "href": "https://www.gramedia.com/api/categories/buku/"
+      },
+      {
+        "title": "Anak-Anak",
+        "href": "https://www.gramedia.com/api/categories/buku/buku-anak/"
+      },
+      {
+        "title": "Remaja",
+        "href": "https://www.gramedia.com/api/categories/buku/buku-anak/remaja/"
+      }
+    ],
+    "formats": [
+      {
+        "name": "Super Diaper Baby #2: Invasion Of The Potty Snatchers",
+        "title": "Hard Cover",
+        "href": "https://www.gramedia.com/api/products/super-diaper-baby-2-invasion-of-the-potty-snatchers-hc/360171/",
+        "type": "book",
+        "rel": "hard-cover",
+        "basePrice": 174000.0,
+        "promoPrice": 174000.0,
+        "promoPercentage": 0.0,
+        "promoId": null,
+        "publishDate": "2028-06-19T17:00:00+00:00",
+        "preOrderStart": null,
+        "preOrderEnd": null,
+        "salesStart": null,
+        "salesEnd": null,
+        "weight": "0.36",
+        "isAllowInsurance": false,
+        "isExtraPacking": false,
+        "shipping": {
+
+        },
+        "version": "hard-cover",
+        "sku": "208026525",
+        "stockLevel": 0,
+        "images": [
+
+        ],
+        "variant": {
+
+        }
+      }
+    ],
+    "thumbnail": "https://cdn.gramedia.com/uploads/items/9780545175326_Super-Diaper-Baby-2-Invasion-Of-The-Potty-Snatchers-Hc.jpg",
+    "href": "https://www.gramedia.com/api/products/super-diaper-baby-2-invasion-of-the-potty-snatchers-hc/",
+    "isBestseller": null,
+    "isPromo": false,
+    "isNew": false,
+    "tags": [
+
+    ]
+  },
+  {
+    "name": "Things That Move : English Learning With Mom & Dad",
+    "authors": [
+      {
+        "title": "Tim Savior Creative",
+        "href": "https://www.gramedia.com/api/authors/author-tim-savior-creative/"
+      }
+    ],
+    "categories": [
+      {
+        "title": "Buku",
+        "href": "https://www.gramedia.com/api/categories/buku/"
+      },
+      {
+        "title": "Anak-anak",
+        "href": "https://www.gramedia.com/api/categories/buku/buku-anak/anak-anak/"
+      }
+    ],
+    "formats": [
+      {
+        "name": "Things That Move : English Learning With Mom & Dad",
+        "title": "Soft Cover",
+        "href": "https://www.gramedia.com/api/products/things-that-move-english-learning-with-mom-dad/314329/",
+        "type": "book",
+        "rel": "soft-cover",
+        "basePrice": 76000.0,
+        "promoPrice": 76000.0,
+        "promoPercentage": 0.0,
+        "promoId": null,
+        "publishDate": "2026-01-25T17:00:00+00:00",
+        "preOrderStart": null,
+        "preOrderEnd": null,
+        "salesStart": null,
+        "salesEnd": null,
+        "weight": "0.2",
+        "isAllowInsurance": false,
+        "isExtraPacking": false,
+        "shipping": {
+
+        },
+        "version": "soft-cover",
+        "sku": "208011453",
+        "stockLevel": 14,
+        "images": [
+
+        ],
+        "variant": {
+
+        }
+      }
+    ],
+    "thumbnail": "https://cdn.gramedia.com/uploads/items/9786025226892.jpg",
+    "href": "https://www.gramedia.com/api/products/things-that-move-english-learning-with-mom-dad/",
+    "isBestseller": null,
+    "isPromo": false,
+    "isNew": false,
+    "tags": [
+
+    ]
+  },
+  {
+    "name": "Tes Iq Prasekolah Siap Masuk Sd Favorit",
+    "authors": [
+      {
+        "title": "Kak Maya",
+        "href": "https://www.gramedia.com/api/authors/author-kak-maya/"
+      }
+    ],
+    "categories": [
+      {
+        "title": "Buku",
+        "href": "https://www.gramedia.com/api/categories/buku/"
+      },
+      {
+        "title": "Anak-anak",
+        "href": "https://www.gramedia.com/api/categories/buku/buku-anak/anak-anak/"
+      }
+    ],
+    "formats": [
+      {
+        "name": "Tes Iq Prasekolah Siap Masuk Sd Favorit",
+        "title": "Soft Cover",
+        "href": "https://www.gramedia.com/api/products/tes-iq-prasekolah-siap-masuk-sd-favorit/364751/",
+        "type": "book",
+        "rel": "soft-cover",
+        "basePrice": 60000.0,
+        "promoPrice": 60000.0,
+        "promoPercentage": 0.0,
+        "promoId": null,
+        "publishDate": "2023-08-19T17:00:00+00:00",
+        "preOrderStart": null,
+        "preOrderEnd": null,
+        "salesStart": null,
+        "salesEnd": null,
+        "weight": 0.21,
+        "isAllowInsurance": false,
+        "isExtraPacking": false,
+        "shipping": {
+          "width": 0.0,
+          "height": 0.0,
+          "length": 0.0,
+          "weight": 0.0
+        },
+        "version": "soft-cover",
+        "sku": "208034106",
+        "stockLevel": 47,
+        "images": [
+
+        ],
+        "variant": {
+
+        }
+      }
+    ],
+    "thumbnail": "https://cdn.gramedia.com/uploads/items/9786024075033.jpg",
+    "href": "https://www.gramedia.com/api/products/tes-iq-prasekolah-siap-masuk-sd-favorit/",
+    "isBestseller": null,
+    "isPromo": false,
+    "isNew": false,
+    "tags": [
+
+    ]
+  }
+]
