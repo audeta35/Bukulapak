@@ -53,6 +53,28 @@ class HomeController extends Controller
 
       $data['detail'] = $json[$id];
 
+      curl_close($curl);
+
+      $curls = curl_init();
+      $param = "city";
+      $key = "87bbe92f50ba11d09fc0d91e9db4fe04";
+      $id = "";
+      $url = "https://api.rajaongkir.com/starter/".$param."?key=".$key."&id=".$id;
+
+      curl_setopt($curls, CURLOPT_URL, $url);
+
+      curl_setopt($curls, CURLOPT_RETURNTRANSFER, 1);
+
+      $results = curl_exec($curls);
+
+      $kota = json_decode($results);
+      $kota = $kota->rajaongkir;
+      $kota = $kota->results;
+
+      $data['kota'] = $kota;
+
+      curl_close($curls);
+
       return view('home.details', $data);
     }
 }
