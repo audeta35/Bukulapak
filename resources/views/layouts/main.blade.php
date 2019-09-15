@@ -4,23 +4,25 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{{ config('app.name') }}</title>
+
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- overlayScrollbars -->
+  <!-- DataTables -->
+  <link rel="stylesheet" href="{{asset('admin/plugins/datatables/dataTables.bootstrap4.css')}}">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="{{asset('admin/plugins/select2/css/select2.min.css')}}">
+  <!-- Theme style -->
   <link rel="stylesheet" href="{{asset('admin/dist/css/adminlte.min.css')}}">
-  <!-- Google Font: Source Sans Pro -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-dark navbar-primary">
+  <nav class="main-header navbar navbar-expand navbar-dark navbar-dark">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -125,9 +127,9 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-light-primary elevation-4">
+  <aside class="main-sidebar sidebar-light-dark elevation-4">
     <!-- Brand Logo -->
-    <a href="../../index3.html" class="brand-link navbar-primary">
+    <a href="../../index3.html" class="brand-link navbar-dark">
       <img src="{{asset('admin/dist/img/AdminLTELogo.png')}}" alt="{{config('app.name')}} Logo" class="brand-image img-circle elevation-3">
       <span class="brand-text text-white ml-3 font-weight-dark"> {{config('app.name')}}</span>
     </a>
@@ -150,7 +152,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="" class="nav-link {{Request::is('/') ? 'active' : null}}">
+            <a href="{{url('/dashboard')}}" class="nav-link {{Request::is('dashboard') ? 'active' : null}}">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -159,9 +161,26 @@
           </li>
           <li class="nav-item">
             <a href="" class="nav-link">
-              <i class="nav-icon fas fa-book"></i>
+              <i class="nav-icon fas fa-shopping-bag"></i>
               <p>
-                Data Buku
+                Data Produk
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url('/')}}" class="nav-link">
+              <i class="nav-icon fas fa-globe"></i>
+              <p>
+                Halaman Website
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url('/invoice')}}" class="nav-link">
+              <i class="nav-icon fa fa-shopping-cart"></i>
+              <p>
+                Pesanan
+                <span class="badge badge-dark right">baru</span>
               </p>
             </a>
           </li>
@@ -170,7 +189,7 @@
               <i class="nav-icon fa fa-users"></i>
               <p>
                 Data Pengguna
-                <i class="fas fa-angle-left right"></i>
+                <i class="fas fa-cog right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -187,6 +206,38 @@
                 </a>
               </li>
             </ul>
+          </li>
+          <li class="nav-item has-treeview {{Request::is('rekening/user') ? 'menu-open' : Request::is('rekening/admin') ? 'menu-open' : null}} ">
+            <a href="" class="nav-link {{Request::is('rekening/user') ? 'active' : Request::is('rekening/admin') ? 'active' : null}}">
+              <i class="nav-icon fas fa-credit-card"></i>
+              <p>
+                Data Rekening
+                <i class="fas fa-cog right"></i>
+              </p>
+            </a>
+
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{url('/rekening/user')}}" class="nav-link {{Request::is('rekening/user') ? 'active' : null}}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Rekening user</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('/rekening/admin')}}" class="nav-link {{Request::is('rekening/admin') ? 'active' : null}}">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Rekening Admin</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="{{url('/rekening')}}" class="nav-link {{Request::is('rekening') ? 'active' : null}}">
+              <i class="nav-icon fas fa-id-card"></i>
+              <p>
+                Tambah Rekeningku
+              </p>
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('logout') }}"onclick="event.preventDefault();document.getElementById('logout-form').submit();">
@@ -209,33 +260,7 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-
-    <!-- Main content -->
-    <section class="content mt-2">
-
-      <!-- Default box -->
-      <div class="card">
-        <div class="card-header">
-          <h3 class="card-title">Title</h3>
-
-          <div class="card-tools">
-            <button type="button" class="btn btn-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
-              <i class="fas fa-minus"></i></button>
-          </div>
-        </div>
-        <div class="card-body">
-          Start creating your amazing application!
-        </div>
-        <!-- /.card-body -->
-        <div class="card-footer">
-          Footer
-        </div>
-        <!-- /.card-footer-->
-      </div>
-      <!-- /.card -->
-
-    </section>
-    <!-- /.content -->
+    @yield('content');
   </div>
   <!-- /.content-wrapper -->
 
@@ -260,10 +285,31 @@
 <!-- Bootstrap 4 -->
 <script src="{{asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- FastClick -->
-<script src="{{asset('admin/plugins/fastclick/fastclick.js')}}"></script>
+<script src="{{asset('admin/plugins/fastclick/fastclick.min.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('admin/dist/js/adminlte.min.js')}}"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="{{asset('admin/dist/js/demo.js')}}"></script>
+<!-- Select2 -->
+<script src="{{asset('admin/plugins/select2/js/select2.full.min.js')}}"></script>
+<!-- DataTables -->
+<script src="{{asset('admin/plugins/datatables/jquery.dataTables.js')}}"></script>
+<script src="{{asset('admin/plugins/datatables/dataTables.bootstrap4.js')}}"></script>
+<!-- Page script -->
+<script>
+$(function () {
+  //Initialize Select2 Elements
+  $('#administrator').select2({
+    placeholder: "Pilih Administrator...",
+  })
+
+  $('#bank').select2({
+    placeholder: "Pilih Bank...",
+  })
+})
+
+$(function () {
+  $('#admin').DataTable()
+  $('#user').DataTable()
+})
+</script>
 </body>
 </html>

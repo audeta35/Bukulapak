@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
             $table->string('status');
+            $table->ipAddress('ip_address');
             $table->string('level');
         });
     }

@@ -10,14 +10,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- daterange picker -->
-  <link rel="stylesheet" href="{{asset('admin/plugins/daterangepicker/daterangepicker.css')}}">
-  <!-- iCheck for checkboxes and radio inputs -->
-  <link rel="stylesheet" href="{{asset('admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
-  <!-- Bootstrap Color Picker -->
-  <link rel="stylesheet" href="{{asset('admin/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css')}}">
-  <!-- Tempusdominus Bbootstrap 4 -->
-  <link rel="stylesheet" href="{{asset('admin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')}}">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="{{asset('admin/plugins/datatables/dataTables.bootstrap4.css')}}">
   <!-- Select2 -->
   <link rel="stylesheet" href="{{asset('admin/plugins/select2/css/select2.min.css')}}">
   <!-- Theme style -->
@@ -64,7 +58,7 @@
   <nav class="navbar navbar-expand navbar-dark navbar-dark">
     <div class="container">
       <ul class="navbar-nav">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="{{url('/')}}">
           <img src="{{asset('admin/dist/img/AdminLTELogo.png')}}" width="30" height="30" class="d-inline-block align-top" alt="">
           <b class="ml-2 h4">{{config('app.name')}}</b>
         </a>
@@ -83,25 +77,42 @@
                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                   <span class="dropdown-item dropdown-header">Halo {{Auth::user()->name}}</span>
                   <div class="dropdown-divider"></div>
+                  @if(Auth::user()->level == 'admin')
+
+                  <a href="{{url('dashboard')}}" class="dropdown-item">
+                    <i class="fas fa-tachometer-alt mr-2"></i> Dashboard
+                    <span class="float-right badge badge-dark">administrator</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  @endif
                   <a href="#" class="dropdown-item">
                     <i class="fas fa-shopping-cart mr-2"></i> Keranjang
                     <span class="float-right text-muted text-sm">3 mins</span>
                   </a>
                   <div class="dropdown-divider"></div>
-                  <a href="#" class="dropdown-item">
+                  <a href="{{url('invoice')}}" class="dropdown-item">
                     <i class="fas fa-shopping-basket mr-2"></i> Status Pembelian
                     <span class="float-right text-muted text-sm">12 hours</span>
                   </a>
                   <div class="dropdown-divider"></div>
-                  <a href="#" class="dropdown-item">
-                    <i class="fas fa-user-cog mr-2"></i> Profile
-                    <span class="float-right text-muted text-sm">2 days</span>
+                  <a href="{{url('/pengaturan')}}" class="dropdown-item">
+                    <i class="fas fa-user-cog mr-2"></i> Pengaturan
+                    @if(Auth::user()->email_verified_at == null)
+                      <span class="float-right badge badge-dark">
+                        <i class="fas fa-exclamation"></i>
+                      </span>
+                    @endif
                   </a>
                   <div class="dropdown-divider"></div>
-                  <a href="#" class="dropdown-item">
+                  <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
                     <i class="fas fa-sign-out-alt mr-2"></i> Keluar
                     <span class="float-right text-muted text-sm">2 days</span>
                   </a>
+
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                      @csrf
+                  </form>
+
                 </div>
               </li>
             @else
@@ -129,43 +140,73 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <div class="container">
-      @yield('content');
+      @yield('content')
     </div>
   </div>
 
 </div>
 <!-- ./wrapper -->
+
+<!-- ./wrapper -->
+
 <!-- jQuery -->
 <script src="{{asset('admin/plugins/jquery/jquery.min.js')}}"></script>
 <!-- Bootstrap 4 -->
 <script src="{{asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-<!-- Select2 -->
-<script src="{{asset('admin/plugins/select2/js/select2.full.min.js')}}"></script>
-<!-- InputMask -->
-<script src="{{asset('admin/plugins/inputmask/jquery.inputmask.bundle.js')}}"></script>
-<script src="{{asset('admin/plugins/moment/moment.min.js')}}"></script>
-<!-- date-range-picker -->
-<script src="{{asset('admin/plugins/daterangepicker/daterangepicker.js')}}"></script>
-<!-- bootstrap color picker -->
-<script src="{{asset('admin/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js')}}"></script>
-<!-- Tempusdominus Bootstrap 4 -->
-<script src="{{asset('admin/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js')}}"></script>
 <!-- FastClick -->
 <script src="{{asset('admin/plugins/fastclick/fastclick.js')}}"></script>
-<!-- Page script -->
+<!-- AdminLTE App -->
+<script src="{{asset('admin/dist/js/adminlte.min.js')}}"></script>
+<!-- Select2 -->
+<script src="{{asset('admin/plugins/select2/js/select2.full.min.js')}}"></script>
+<!-- DataTables -->
+<script src="{{asset('admin/plugins/datatables/jquery.dataTables.js')}}"></script>
+<script src="{{asset('admin/plugins/datatables/dataTables.bootstrap4.js')}}"></script>
 <script>
   $(function () {
     //Initialize Select2 Elements
+
     $('#kotaTujuan').select2({
       placeholder: "Pilih kota...",
-      allowClear: true
+    })
+
+    $('#rekening').select2({
+      placeholder: "Untuk mempercepat proses konfirmasi pembayaran",
     })
 
     $('#kurir').select2({
       placeholder: "Pilih kurir...",
-      allowClear: true
     })
+
+    $('#total').select2({
+      placeholder: "Pilih Durasi",
+    })
+
+    $('#jml').select2({
+      placeholder: "Jumlah barang maks @if(isset($detail->formats[0]->stockLevel)) {{$detail->formats[0]->stockLevel}} @endif",
+    })
+  });
+</script>
+<script>
+$(function () {
+  $('.daftar_beli').DataTable({
+    "paging": true,
+    "lengthChange": false,
+    "searching": false,
+    "ordering": true,
+    "info": true,
+    "autoWidth": false,
   })
+
+  $('.rekening_admin').DataTable({
+    "paging": true,
+    "lengthChange": false,
+    "searching": false,
+    "ordering": true,
+    "info": true,
+    "autoWidth": false,
+  })
+})
 </script>
 </body>
 </html>
