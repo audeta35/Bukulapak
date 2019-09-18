@@ -21,23 +21,11 @@ class RekeningController extends Controller
       $this->middleware('auth');
     }
 
-    public function index($level)
+    public function index($role)
     {
-      if($level == 'admin'){
-
-
-        $data['data'] = Rekening::where('is_admin', '1')->get();
-        $data['rekening'] = $level;
-        return view('layouts.rekening', $data);
-
-      }
-
-      elseif($level == 'user'){
-
-        $data['data'] = Rekening::where('is_admin', '0')->get();
-        $data['rekening'] = $level;
-        return view('layouts.rekening', $data);
-      }
+      $data['data'] = Rekening::where('is_admin', $role)->get();
+      $data['rekening'] = $role;
+      return view('layouts.rekening', $data);
     }
 
     /**
@@ -47,13 +35,13 @@ class RekeningController extends Controller
      */
     public function create()
     {
-        if(Auth::user()->level == 'admin') {
+        if(Auth::user()->role_id == 1) {
 
           $bank = Storage::disk('local')->get('bank.json');
 
           $json = json_decode($bank);
           $data['bank'] = $json;
-          $data['user'] = User::where('level', 'admin')->get();
+          $data['user'] = User::where('role_id', 1)->get();
 
           return view('layouts.rekening_add', $data);
 

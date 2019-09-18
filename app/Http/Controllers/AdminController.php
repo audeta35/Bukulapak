@@ -25,16 +25,7 @@ class AdminController extends Controller
 
     public function index()
     {
-      if (Auth::user()->level == "user") {
-
-        return redirect('/');
-      }
-
-      else if(Auth::user()->level == "admin") {
-
-        return view('layouts.example');
-
-      }
+      return view('layouts.example');
     }
 
 }

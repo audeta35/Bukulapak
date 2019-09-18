@@ -218,13 +218,13 @@
 
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{url('/rekening/user')}}" class="nav-link {{Request::is('rekening/user') ? 'active' : null}}">
+                <a href="{{url('/rekening/0')}}" class="nav-link {{Request::is('rekening/user') ? 'active' : null}}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Rekening user</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('/rekening/admin')}}" class="nav-link {{Request::is('rekening/admin') ? 'active' : null}}">
+                <a href="{{url('/rekening/1')}}" class="nav-link {{Request::is('rekening/admin') ? 'active' : null}}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Rekening Admin</p>
                 </a>

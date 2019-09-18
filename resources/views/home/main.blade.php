@@ -77,7 +77,7 @@
                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                   <span class="dropdown-item dropdown-header">Halo {{Auth::user()->name}}</span>
                   <div class="dropdown-divider"></div>
-                  @if(Auth::user()->level == 'admin')
+                  @if(Auth::user()->role_id == 1)
 
                   <a href="{{url('dashboard')}}" class="dropdown-item">
                     <i class="fas fa-tachometer-alt mr-2"></i> Dashboard
